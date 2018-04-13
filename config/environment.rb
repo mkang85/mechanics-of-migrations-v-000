@@ -24,4 +24,6 @@ CREATE TABLE IF NOT EXISTS artists (
 )
 SQL
 
+ActiveRecord::Base.connection.execute(sql)
+
 require_relative "../artist.rb"
